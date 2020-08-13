@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100vh;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Placeholders fade out on focus */
+input:focus::placeholder {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+/* index.html */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    width: 48px;
+    height: 48px;
+    margin: 20px 0;
+}
+
+nav .menu {
+    display: flex;
+    list-style-type: none;
+}
+
+nav .menu .menu-item {
+    position: relative;
+}
+
+nav .menu .menu-item a {
+    color: white;
+    display: block;
+    padding: 10px 50px;
+}
+
+nav.sticky {
+    background-color: #fafafa;
+    color: black;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#nav-login, #nav-sign-up {
+    font-weight: 500;
+}
+
+#nav-sign-up a {
+    padding-right: 0;
+}
+
+/* Width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #F97370; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #707070; 
+}
