@@ -15,6 +15,23 @@ function createUser(user) {
 }
 
 $(document).ready(function () {
+    $('.carousel').flickity({
+        cellAlign: 'left',
+        contain: true,
+        groupCells: 4,
+    });
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 0) {
+            $('nav').addClass('sticky');
+            $('nav .menu .menu-item a').css('color', 'black');
+        }
+        else {
+            $('nav').removeClass('sticky');
+            $('nav .menu .menu-item a').css('color', 'white');
+        }
+    });
+
     function User(email, username, password) {
         this.email = email;
         this.username = username;
@@ -128,5 +145,5 @@ $(document).ready(function () {
 
     $(document).on('click', '.close-alert', function() {
         $(this).parent().hide();
-    })
+    });
 });
