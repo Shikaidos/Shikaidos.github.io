@@ -30,8 +30,6 @@ input:focus::placeholder {
     opacity: 0;
 }
 
-/* index.html */
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -67,18 +65,28 @@ nav .menu .menu-item a {
     padding: 10px 50px;
 }
 
-nav.sticky {
+.nav-login {
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.nav-sign-up {
+    background-color: #3069F0;
+    border-radius: 10px;
+}
+
+.nav-sign-up a {
+    color: white !important;
+}
+
+.nav-sticky {
     background-color: #fafafa;
-    color: black;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-#nav-login, #nav-sign-up {
-    font-weight: 500;
-}
-
-#nav-sign-up a {
-    padding-right: 0;
+.nav-sticky .menu .menu-item a {
+    color: black;
 }
 
 /* Width */
