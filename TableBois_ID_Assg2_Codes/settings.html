@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Settings - Codify</title>
+        <link rel="shortcut icon" type="image" href="images/logo.svg">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav-sticky">
+            <div class="nav-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="explore.html">Explore</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="favourites.html">Favourites</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="educators.html">Educators</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="menu">
+                <li class="nav-login menu-item">
+                    <a href="login.html" target="_blank">Login</a>
+                </li>
+                <li class="nav-sign-up menu-item">
+                    <a href="sign-up.html" target="_blank">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="settings-info">
+            <h1>Edit Profile</h1>
+            <img src="images/xps.jpg" id="settings-pfp">
+            <button type="button" id="btn-change-pfp" class="pointer">Change</button>
+            <form>
+                <label for="settings-username">Username</label>
+                <input type="text" id="settings-username" placeholder="Username">
+    
+                <label for="settings-email">Email</label>
+                <input type="text" id="settings-email" placeholder="Email">
+    
+                <label for="settings-occupation">Occupation</label>
+                <input type="text" id="settings-occupation" placeholder="Occupation">
+    
+                <label for="settings-location">Location</label>
+                <input type="text" id="settings-location" placeholder="Location">
+    
+                <label for="settings-bio">Bio</label>
+                <input type="text" id="settings-bio" placeholder="About yourself">
+            </form>
+            <button type="button" id="btn-save-settings" class="pointer">Save</button>
+        </div>
+
+        <div id="settings-privacy">
+            <h1>Privacy</h1>
+            <div> 
+                <p>Make my account public</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div> 
+                <p>Show my location</p>
+                    <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    </label>
+            </div>
+            <div> 
+                <p>Show my badges</p>
+                    <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    </label>
+            </div>
+            <div> 
+                <p>Allow contact from anyone</p>
+                    <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                     </label>
+            </div>
+            <div> 
+                <p>Allow 2FA</p>
+                    <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    </label>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
